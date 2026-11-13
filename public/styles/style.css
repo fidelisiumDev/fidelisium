@@ -1,16 +1,97 @@
+/* =========================
+   1. Configuración general
+   ========================= */
+
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background-color: #E8ECEF;
+  font-family: Arial, sans-serif;
+  color: #222;
 }
 
-.centered {
-    padding-top: 200px;
-    text-align: center;
+a {
+  color: inherit;
+  text-decoration: none;
 }
-
-.secret-text {
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(32, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  min-height: 100vh;
+}
+.main-header {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f8f8f8;
+}
+.marketingSpot {
+  order: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #8096ac;
+}
+.mainNav {
+  order: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 50%;
+  padding: 1rem 0;
+  background-color: #8cac9a;
+  
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 25%;
+}
+/* NAVEGACION ADAPTABLE */
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 75%;
+}
+.navigationLinksList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 70%;
+}
+.userAccountActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 10%;
+}
+/* MENU ADAPTABLE */
+.menuToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.menuIcon {
+  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
   text-align: center;
-  font-size: 2rem;
-  color: #fff;
-  background-color: #000;
+  line-height: 1.5rem;
 }
+/* FINAL DE MENU ADAPTABLE */
+/* FINAL DE NAVEGACION*/
