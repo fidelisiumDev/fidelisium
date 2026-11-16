@@ -15,10 +15,10 @@ app.use(express.static("public"));
 
 
 
-
+const currentYear = new Date().getFullYear();
 app.get("/", (req, res) => {
   // FUNCION PARA PRESENTAR EL AÑO ACTUAL EN EL FOOTER
-  res.render("home.ejs");
+  res.render("home.ejs", { currentYear: currentYear });
 });
 
 app.get("/login", (req, res) => {

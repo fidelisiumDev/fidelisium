@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0; 
-  color: black;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .contenedor {
@@ -43,6 +42,7 @@
 }
 .merca1H1 {
   color: white;
+  font-size: clamp(1.5rem, 2.5rem, 3rem);
   padding: 10px 20px;
 }
 .buttonPpl {
@@ -60,17 +60,26 @@
 }
 .logoPpl {
   padding: 10px 60px;
+  flex: 0 0 1;
 }
 .ulPrincipal{
   display: flex;
   list-style: none;
   list-style-type: none;
+  flex: 0 0 1
 }
 .ulPrincipal li {
   padding: 10px 20px;
 }
 .ulPrincipal li:hover {
   cursor: pointer;
+}
+.loginAccount {
+  flex: 0 0 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
 }
 .carouselYServicios {
   height: 70vh;
@@ -81,6 +90,13 @@
   height: 15vh;
   background-color: white;
   grid-area: trusT;
+}
+.workedPreviously {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ourServicesAndWork {
   height: 100vh;
@@ -122,4 +138,88 @@
   background-color: black;
   color: white;
   grid-area: realF;
+  display: flex;
+  flex-flow: row wrap;
+  place-content: center;
+}
+.realFContent {
+  width: 90%;
+  height: 90%;
+  /* background-color: rgb(173, 170, 190); */
+  display: flex;
+  justify-content: space-between;
+}
+.logoFooter {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  flex: 2;
+}
+.logoFooterImg{
+  height: clamp(1.25rem, 1rem + 1vw, 1.5rem);
+  width: clamp(1.25rem, 1rem + 1vw, 1.5rem); 
+}
+.quickLinksUl {
+  list-style: none;
+  list-style-type: none;
+  height: 100%;
+  /* background-color:rgb(7, 69, 7); */
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+}
+.quickLinksUl li, .ourServicesFooterUl li, .rssAndSubscribeUl li {
+  padding: 0.2rem 0;
+}
+.ourServicesFooterUl {
+  list-style: none;
+  list-style-type: none;
+  height: 100%;
+  /* background-color:rgb(7, 69, 7); */
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+}
+
+.rssAndSubscribeUl{
+  list-style: none;
+  list-style-type: none;
+  height: 100%;
+  /* background-color: rgb(209, 212, 161); */
+  flex: 1;
+}
+.subscribeInput {
+  height: 100%;
+  /* background-color: rgb(161, 222, 165); */
+  flex: 2;
+}
+.footerText {
+  font-weight: normal;
+  font-size: clamp(0.75rem, 1rem, 1.25rem);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.subscribeInputField {
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.subscribeButton {
+  padding: 10px 25px;
+  border-radius: 10px;
+  /* NEON */
+  text-shadow: 0 0 8px rgba(153, 255, 51, 0.6);
+  box-shadow: 0 0 10px rgba(153, 255, 51, 0.4), inset 0 0 10px rgba(153, 255, 51, 0.2);
+  transition: all 0.25s ease;
+}
+.subscribeButton:hover {
+  transform: scale(1.05);
+  background-color: #99FF33;
+  color: #0d0d0d; /* Dark text ensures high readability */
+  box-shadow: 0 0 20px #99FF33, 0 0 40px #99FF33;
 }
