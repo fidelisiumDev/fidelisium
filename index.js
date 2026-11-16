@@ -14,11 +14,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 
-const yearSpan = new Date().getFullYear();
+
 
 app.get("/", (req, res) => {
   // FUNCION PARA PRESENTAR EL AÑO ACTUAL EN EL FOOTER
-  res.render("home.ejs", { year: yearSpan });
+  res.render("home.ejs");
 });
 
 app.get("/login", (req, res) => {

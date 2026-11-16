@@ -1,97 +1,125 @@
-/* =========================
-   1. Configuración general
-   ========================= */
-
 * {
-  box-sizing: border-box;
-  list-style-type: none;
   margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  color: #222;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  padding: 0; 
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .contenedor {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(32, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  min-height: 100vh;
+  grid-template-areas: "intScr intScr intScr intScr intScr intScr intScr intScr intScr intScr intScr intScr intScr intScr intScr intScr"
+                        "marke marke marke marke marke marke marke marke marke marke marke marke marke marke marke marke"
+                        "mainNav mainNav mainNav mainNav mainNav mainNav mainNav mainNav mainNav mainNav mainNav mainNav mainNav mainNav mainNav mainNav"
+                        "mainS mainS mainS mainS mainS mainS mainS mainS mainS mainS mainS mainS mainS mainS mainS mainS"
+                        "trusT trusT trusT trusT trusT trusT trusT trusT trusT trusT trusT trusT trusT trusT trusT trusT"
+                        "servAndWork servAndWork servAndWork servAndWork servAndWork servAndWork servAndWork servAndWork servAndWork servAndWork servAndWork servAndWork servAndWork servAndWork servAndWork servAndWork"
+                        "ourS ourS ourS ourS ourS ourS ourS ourS ourS ourS ourS ourS ourS ourS ourS ourS"
+                        "ourWo ourWo ourWo ourWo ourWo ourWo ourWo ourWo ourWo ourWo ourWo ourWo ourWo ourWo ourWo ourWo"
+                        "finF finF finF finF finF finF finF finF finF finF finF finF finF finF finF finF"
+                        "whyC whyC whyC whyC whyC whyC whyC whyC whyC whyC whyC whyC whyC whyC whyC whyC"
+                        "rev rev rev rev rev rev rev rev rev rev rev rev rev rev rev rev"
+                        "quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote"
+                        "realF realF realF realF realF realF realF realF realF realF realF realF realF realF realF realF"
+                        ;
+                        
 }
-.main-header {
-  grid-column-start: 1;
-  grid-column-end: -1;
+.contenedor .pantallaPrincipal {
+  background-color: rgb(162, 203, 203);
+  height: 100vh;
+  grid-area: intScr;
+}
+.mercadeoNavegacion {
+  background-color: rgb(189, 189, 237);
   height: 15vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: #f8f8f8;
 }
-.marketingSpot {
-  order: 1;
+.merca1 {
+  height: 50%;
+  background-color: rgb(7, 69, 7);
+  grid-area: marke;
+  /* CENTERING MARKETING TEXT */
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-basis: 50%;
-  width: 100%;
-  padding: 1rem 0;
-  background-color: #8096ac;
-}
-.mainNav {
-  order: 2;
-  width: 100%;
-  display: flex;
   align-items: center;
+}
+.merca1H1 {
+  color: white;
+  padding: 10px 20px;
+}
+.buttonPpl {
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+.merca2 {
+  height: 50%;
+  background-color: white;
+  grid-area: mainNav;
+  display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
-  flex-basis: 50%;
-  padding: 1rem 0;
-  background-color: #8cac9a;
-  
-}
-.logo {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  flex-basis: 25%;
 }
-/* NAVEGACION ADAPTABLE */
-.navLinks {
+.logoPpl {
+  padding: 10px 60px;
+}
+.ulPrincipal{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-basis: 75%;
+  list-style: none;
+  list-style-type: none;
 }
-.navigationLinksList {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 70%;
+.ulPrincipal li {
+  padding: 10px 20px;
 }
-.userAccountActions {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 10%;
-}
-/* MENU ADAPTABLE */
-.menuToggle {
-  background: none;
-  border: none;
+.ulPrincipal li:hover {
   cursor: pointer;
-  font-size: 1.5rem;
 }
-.menuIcon {
-  display: none;
-  width: 1.5rem;
-  height: 1.5rem;
-  text-align: center;
-  line-height: 1.5rem;
+.carouselYServicios {
+  height: 70vh;
+  background-color: rgb(193, 157, 227);
+  grid-area: mainS;
 }
-/* FINAL DE MENU ADAPTABLE */
-/* FINAL DE NAVEGACION*/
+.companias{
+  height: 15vh;
+  background-color: white;
+  grid-area: trusT;
+}
+.ourServicesAndWork {
+  height: 100vh;
+  background-color: rgb(210, 174, 152);
+  grid-area: servAndWork;
+}
+.ourServices {
+  height: 50vh;
+  background-color: rgb(223, 195, 161);
+  grid-area: ourS;
+}
+.ourWwork {
+  height: 50vh;
+  background-color: rgb(150, 216, 195);
+  grid-area: ourWo;
+}
+.finalF {
+  height: 100vh;
+  background-color: rgb(198, 154, 154);
+  grid-area: finF;
+}
+.whyC {
+  height: 30vh;
+  background-color: aqua;
+  grid-area: whyC;
+}
+.rev {
+  height: 30vh;
+  background-color: rgb(161, 222, 165);
+  grid-area: rev;
+}
+.quote {
+  height: 10vh;
+  background-color: rgb(209, 222, 161);
+  grid-area: quote;
+}
+.realF {
+  height: 30vh;
+  background-color: black;
+  color: white;
+  grid-area: realF;
+}
