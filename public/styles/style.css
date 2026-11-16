@@ -33,7 +33,8 @@
 }
 .merca1 {
   height: 50%;
-  background-color: rgb(7, 69, 7);
+  /* background-color: rgb(7, 69, 7); */
+  background: linear-gradient(90deg, hsla(148, 78%, 30%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
   grid-area: marke;
   /* CENTERING MARKETING TEXT */
   display: flex;
@@ -130,8 +131,32 @@
 }
 .quote {
   height: 10vh;
-  background-color: rgb(209, 222, 161);
+  background: linear-gradient(90deg, hsla(148, 78%, 30%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
   grid-area: quote;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.paperPlane {
+  flex: 0 0 1;
+  height: clamp(1.25rem, 1rem + 1vw, 1.5rem);
+  width: clamp(1.25rem, 1rem + 1vw, 1.5rem); 
+}
+.footerText1 {
+  flex: 0 0 2;
+  color: white;
+  text-align: center;
+  font-size: clamp(1rem, 1rem + 1vw, 1.5rem);
+}
+.quoteButton {
+  flex: 0 0 1;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+.nicePic {
+  flex: 0 0 1;
+  height: clamp(1.25rem, 1rem + 1vw, 1.5rem);
+  width: clamp(1.25rem, 1rem + 1vw, 1.5rem); 
 }
 .realF {
   height: 30vh;
