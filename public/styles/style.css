@@ -116,7 +116,7 @@
 }
 .finalF {
   height: 100vh;
-  background-color: rgb(198, 154, 154);
+  /* background-color: rgb(198, 154, 154); */
   grid-area: finF;
 }
 .whyC {
@@ -126,8 +126,61 @@
 }
 .rev {
   height: 30vh;
-  background-color: rgb(161, 222, 165);
+  /* background-color: rgb(161, 222, 165); */
   grid-area: rev;
+  padding: 0 5.5%;
+  display: flex;
+  flex-flow: column;
+}
+.standardText{
+  font-size: clamp(1rem, 1rem + 1vw, 1.5rem);
+  font-weight: 400;
+  color: rgb(102, 100, 100);
+}
+.cardsRev {
+  flex-basis: 100%;
+  /* background-color: rgb(161, 222, 165); */
+  display: flex;
+  flex-flow: column wrap;
+  column-gap: clamp(0.5rem, 1rem, 1.5rem);
+  row-gap: clamp(0.5rem, 1rem, 1.5rem);
+  place-content: center;
+  flex-direction: row;
+  padding: 2% 2%;
+}
+.sCardWImg{
+  width: clamp(250px, 30%, 500px);
+  height: clamp(150px, 20%, 00px);
+  display: flex;
+  padding: 1% 1%;
+}
+.sCardWImg-Img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: clamp(0.5rem, 1rem, 1.5rem) clamp(0.5rem, 1rem, 1.5rem) clamp(0.5rem, 1rem, 1.5rem) clamp(0.5rem, 1rem, 1.5rem);
+  object-fit: cover;
+}
+.sCardWImg-p {
+  width: 50%;
+  font-size: clamp(0.75rem, 1rem, 1.25rem);
+  text-align: left;
+  
+}
+.sCardWImgTextPosition {
+  color: rgb(160, 158, 158);
+}
+.card1 {
+ /* background-color: rgb(133, 86, 25); */
+ order: 1;
+}
+.card2 {
+ /* background-color: rgb(182, 76, 155); */
+ order: 2;
+}
+.card3 {
+ /* background-color: rgb(27, 25, 133); */
+ order: 3;
 }
 .quote {
   height: 10vh;
@@ -147,6 +200,9 @@
   color: white;
   text-align: center;
   font-size: clamp(1rem, 1rem + 1vw, 1.5rem);
+}
+.footerText2 {
+  color: white;
 }
 .quoteButton {
   flex: 0 0 1;
