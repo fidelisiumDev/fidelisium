@@ -32,6 +32,20 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+  background-image: 
+    linear-gradient(rgba(249, 248, 246, 0.95), rgba(249, 248, 246, 0.95)), 
+    url('../img/img/gabpVideoRoom.webp');
+
+  /* 2. Mezcla el color con la foto para conservar luces y sombras */
+  
+
+  /* 3. Ajustes estándar para que el fondo cubra todo el hero */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Ejemplo de altura */
+  min-height: 80vh; 
 }
 .navbar {
   height: 8vh;
