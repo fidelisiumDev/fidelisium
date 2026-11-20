@@ -21,7 +21,7 @@
 }
 .navbar {
   height: 8vh;
-  background-color: rgb(81, 81, 240);
+  /* background-color: rgb(81, 81, 240); */
   position: relative;
   z-index: 2;
   grid-column: 1 / -1;
@@ -208,7 +208,7 @@
 }
 .carousel-wrapper {
   height: 85vh;
-  background-color: rgb(118, 185, 115);
+  /* background-color: rgb(118, 185, 115); */
   z-index: 1;
   grid-column: 1 / -1;
   grid-row: 1 / 3;
