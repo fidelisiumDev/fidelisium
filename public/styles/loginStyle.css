@@ -91,8 +91,33 @@
 
 }
 .loginButton {
-    width: 12em;
-    padding: 0.1em;
+    width: 98%;
+    padding: 1em;
+    background-color: var(--verdeSalvia);
+    border: none;
+    border-radius: 15px;
+    color: var(--generalWarmBackground);
+
+    @media (min-width: 640px) {
+        width: 98%;
+    }
+    /* Medium (md): Tablets (≥ 768px) */
+    @media (min-width: 768px) {
+        width: 93%;
+    }
+    /* Large (lg): Laptops & Small Desktops (≥ 1024px) */
+    @media (min-width: 1024px) {
+        width: 93%;
+    }
+    /* Extra Large (xl): Standard Desktops (≥ 1280px) */
+    @media (min-width: 1280px) {
+        width: 93%;
+    }
+    /* 2X Large (2xl): Large Monitors & 4K Displays (≥ 1536px) */
+    @media (min-width: 1536px) {
+        width: 92%;
+        height: 18%;
+    }
 }
 .requestAccess{
     text-decoration: none;
@@ -101,6 +126,57 @@
     background-color: var(--verdeSalvia);
     color: var(--generalWarmBackground);
 }
+.accountRec {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 1em 1.5em;
+    background-color: none;
+    color: var(--verdeSalvia);
+}
 .requestAccess:hover{
     background-color: var(--terracotaSuave);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    height: 35%;
+    width: 75%;
+    /* background-color: var(--verdeSalvia); */
+
+    /* Large (lg): Laptops & Small Desktops (≥ 1024px) */
+    @media (min-width: 1024px) {
+        height: 50%;
+        width: 55%;
+    }
+    /* Extra Large (xl): Standard Desktops (≥ 1280px) */
+    @media (min-width: 1280px) {
+        height: 50%;
+        width: 50%;
+    }
+    /* 2X Large (2xl): Large Monitors & 4K Displays (≥ 1536px) */
+    @media (min-width: 1536px) {
+        height: 50%;
+        width: 45%;
+    }
+}
+input {
+    width: 90%;
+    height: 14%;
+    border-radius: 10px;
+    padding: 0px 6px;
+    border: none;
+
+    @media (min-width: 640px) {}
+    /* Medium (md): Tablets (≥ 768px) */
+    @media (min-width: 768px) {}
+    /* Large (lg): Laptops & Small Desktops (≥ 1024px) */
+    @media (min-width: 1024px) {}
+    /* Extra Large (xl): Standard Desktops (≥ 1280px) */
+    @media (min-width: 1280px) {
+    }
+    /* 2X Large (2xl): Large Monitors & 4K Displays (≥ 1536px) */
+    @media (min-width: 1536px) {
+        height: 20%;
+    }
 }
