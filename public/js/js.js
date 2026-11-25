@@ -48,3 +48,34 @@ document.addEventListener("keydown", (event) => {
         hamburger.focus();
     }
 });
+
+
+// Animación de palabras---------------------------------------
+const word = document.querySelector("#changing-word");
+
+const words = [
+    "MODERN",
+    "CREATIVE",
+    "USEFUL",
+    "INNOVATIVE"
+];
+
+let index = 0;
+
+setInterval(() => {
+    word.style.opacity = "0";
+    word.style.transform = "translateY(10px)";
+
+    setTimeout(() => {
+        index = (index + 1) % words.length;
+        word.textContent = words[index];
+
+        word.style.transform = "translateY(-10px)";
+
+        requestAnimationFrame(() => {
+            word.style.opacity = "1";
+            word.style.transform = "translateY(0)";
+        });
+    }, 350);
+}, 2500);
+// -------------------------------------------------------------

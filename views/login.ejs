@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/loginStyle.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="loginCont">
+        <div class="decoCont"></div>
+        <div class="decoCont1"></div>
+        <div class="darkerContainer"></div>
+        <div class="lighterContainer"></div>
+        <div class="loginForm">
+            <h1 class="loginH1">Welcome!</h1>
+            <form action="/login" method="POST">
+                <input type="text" name="username" placeholder="Username" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <button class="loginButton" type="submit">Login</button>
+            </form>
+            <p class="orReq">Or</p>
+            <a class="requestAccess" href="/register">REQUEST ACCESS</a>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

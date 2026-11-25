@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --generalWarmBackground: #F9F8F6;
+    --generalWarmDarkerBackground: #fad07c;
+    --carbonProfundo: #1C1917;
+    --verdeSalvia: #4A6B5D;
+    --terracotaSuave: #D97757;
+}
+.loginCont {
+    height: 100vh;
+    /* background: var(--verdeSalvia); */
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    align-items: center;
+    justify-items: center;
+}
+.decoCont {
+    background-color: var(--generalWarmBackground);
+    height: 100vh;
+    width: 100vw;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    z-index: 1;
+    clip-path: polygon(0% 0%, 50% 0%, 100% 0%, 0% 100%);
+}
+.decoCont1 {
+    background-color: #f5ead6;
+    height: 100vh;
+    width: 100vw;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    z-index: 1;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 100% 0%);
+}
+.darkerContainer {
+    background-color: #f5ead6;
+    height: 90vh;
+    width: 90vw;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    z-index: 2;
+    /* clip-path: circle(radius at cx cy); */
+    /* clip-path: circle(20% at top left); */
+    /* clip-path: ellipse(rx ry at cx cy); */
+    /* clip-path: ellipse(80px 80px at 50% 50%); */
+    /* Lets you crop from a rectangular area from element like edge like padding */
+    /* clip-path: inset(top right bottom left round(border-radius)); */
+    /* clip-path: inset(20px 30px 40px 10px round 15px 45px 15px 600px); */
+    /* any custom shape by defining x and y coordinates */
+    /* clip-path: polygon(x1y1, x2y2, x3y3, ...);     */
+    /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
+    /* clip-path: polygon(75% 0, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); */
+    /* clip-path: path("M"); */
+    /* USES NORMAL LINE TO LINE AND THEN */
+    /* A RX,RY X-AXIS-ROTATION, LARGE-ARC-FLAG, SWEEP-FLAG */
+    /* 0,0,0 0,0,1 CONVEX AND CONCAVE */
+    /* clip-path: path("M 10,80 L 120,80 A 10,10 0,0,0 130,70 L 130,10 L 140,0 L 170,0 L 180,10 L 180,100 L 170,110 L 10,110 L 0,100 L 0,90 Z"); */
+    clip-path: polygon(0% 0%, 50% 0%, 100% 0%, 0% 100%);
+}
+.lighterContainer {
+    background-color: var(--generalWarmBackground);
+    height: 90vh;
+    width: 90vw;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    z-index: 2;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 100% 0%);
+    
+}
+.loginForm {
+    
+    height: 60vh;
+    width: 80vw;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+
+}
+.loginButton {
+    width: 12em;
+    padding: 0.1em;
+}
+.requestAccess{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 1em 1.5em;
+    background-color: var(--verdeSalvia);
+    color: var(--generalWarmBackground);
+}
+.requestAccess:hover{
+    background-color: var(--terracotaSuave);
+}

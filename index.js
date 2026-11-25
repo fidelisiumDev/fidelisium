@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 
 app.get("/about", (req, res) => {
   res.render("about.ejs");
-});
+}); 
 app.get("/services", (req, res) => {
   res.render("services.ejs");
 });
@@ -32,12 +32,15 @@ app.get("/faq", (req, res) => {
 });
 
 app.get("/login", (req, res) => {
-  
   res.render("login.ejs");
 });
 
 app.get("/register", (req, res) => {
   res.render("register.ejs");
+});
+
+app.get("/dashboard", (req, res) => {
+  res.render("partials/dashboard.ejs");
 });
 
 
